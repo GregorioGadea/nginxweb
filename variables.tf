@@ -16,7 +16,7 @@ variable "availability_zone" {
 
 variable "aws_key" {
   type = string
-  default = "key_web" # <--- KEY NAME
+  default = "key_web" # <--- KEY NAME OF YOUR KEY PAIR ON AWS 
 }
   
 variable "ami" {

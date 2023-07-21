@@ -25,8 +25,6 @@ services:
         ports:
             - 80:80
             - 443:443
-        volumes:
-            - /home/ubuntu/nginx/conf.d:/etc/nginx/conf.d
 EOF
 
 # ---- Run docker-compose ----
