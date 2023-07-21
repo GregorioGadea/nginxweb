@@ -24,5 +24,7 @@ services:
             - /home/ubuntu/nginx/conf.d:/etc/nginx/conf.d
 EOF
 
-# Perform a system upgrade if needed
-sudo apt upgrade -y
+# ---- Run docker-compose ----
+sudo chmod +x /home/ubuntu/compose_files/docker-compose.yml
+cd /home/ubuntu/compose_files
+sudo docker-compose up -d
