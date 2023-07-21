@@ -1,3 +1,5 @@
+#!/bin/bash -xe
+
 sudo apt update
 
 sudo snap install docker # install docker and docker-compose
