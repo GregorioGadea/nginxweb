@@ -4,6 +4,8 @@ sudo apt update
 sudo snap install docker
 sudo snap install docker-compose
 
+sudo mkdir -p /home/ubuntu/compose_files
+
 cat <<EOF > /home/ubuntu/compose_files/docker-compose.yml
 version: '3'
 services:
@@ -15,7 +17,7 @@ services:
             - 80:80
             - 443:443
         volumes:
-            - /home/ubuntu/compose_files/nginx/conf.d:/etc/nginx/conf.d
+            - /home/ubuntu/nginx/conf.d:/etc/nginx/conf.d
 EOF
 
 # Perform a system upgrade if needed
