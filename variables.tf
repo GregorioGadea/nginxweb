@@ -1,7 +1,7 @@
 
 variable "aws_region" {
     type = string
-    default = "us_east_1" # <--- PROVIDER REGION
+    default = "us-east-1" # <--- PROVIDER REGION
 }
 
 variable "instance_type" {

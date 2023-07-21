@@ -1,2 +1,4 @@
 ##ignore key pars
 *.pem
+.terraform
+.terraform.lock.hcl
