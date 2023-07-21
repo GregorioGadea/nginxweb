@@ -31,3 +31,7 @@ sudo docker-compose up -d
 
 #sudo usermod -aG docker $USER
 #sudo newgrp docker
+
+cat <<"EOF" > /home/ubuntu/done.txt
+Done!
+EOF
