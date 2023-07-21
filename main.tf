@@ -1,4 +1,4 @@
-resource "aws_instance" "web2" {
+resource "aws_instance" "web" {
   provider      = aws
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
