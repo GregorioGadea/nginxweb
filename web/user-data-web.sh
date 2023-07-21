@@ -8,8 +8,8 @@ sudo mkdir /home/ubuntu/compose_files
 
 sudo snap install docker
 sleep 10 # wait for docker to start
-sudo snap install docker-compose
-sleep 10 # wait for docker-compose to start
+#sudo snap install docker-compose
+#sleep 10 # wait for docker-compose to start
 sudo chmod +x /usr/local/bin/docker-compose 
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo systemctl start docker
