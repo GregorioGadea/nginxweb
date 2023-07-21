@@ -1,15 +1,8 @@
 
-variable "provider" {
+variable "aws_region" {
     type = string
     default = "us_east_1" # <--- PROVIDER REGION
 }
-
-/*
-variable "instance_id" {
-  type = string
-  default = "value"    # <--- ID OF THE INSTANCE
-}
-*/
 
 variable "instance_type" {
   type = string
@@ -29,8 +22,4 @@ variable "aws_key" {
 variable "ami" {
   type = string
   default = "value" # <--- AMI ID
-}
-
-variable "aws_region" {
-  region = "us-east-1" # <--- REGION
 }
