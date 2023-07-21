@@ -15,10 +15,8 @@ services:
             - 80:80
             - 443:443
         volumes:
-            - ./nginx/conf.d:/etc/nginx/conf.d
+            - /home/ubuntu/compose_files/nginx/conf.d:/etc/nginx/conf.d
 EOF
-
-sudo chown -R ubuntu:ubuntu /home/ubuntu/compose_files
 
 # Perform a system upgrade if needed
 sudo apt upgrade -y
