@@ -30,3 +30,7 @@ variable "ami" {
   type = string
   default = "value" # <--- AMI ID
 }
+
+variable "aws_region" {
+  region = "us-east-1" # <--- REGION
+}
