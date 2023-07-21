@@ -1,10 +1,12 @@
 #!/bin/bash -xe
 
-sudo apt update
+sudo apt update -y
+
+sudo mkdir -p /home/ubuntu/compose_files
+
 sudo snap install docker
 sudo snap install docker-compose
 
-sudo mkdir -p /home/ubuntu/compose_files
 
 cat <<EOF > /home/ubuntu/compose_files/docker-compose.yml
 version: '3'
