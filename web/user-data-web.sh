@@ -6,7 +6,9 @@ sudo mkdir -p /home/ubuntu/compose_files
 
 sudo snap install docker
 sudo snap install docker-compose
-
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+sudo systemctl start docker
 
 cat <<EOF > /home/ubuntu/compose_files/docker-compose.yml
 version: '3'
