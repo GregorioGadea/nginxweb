@@ -1,6 +1,7 @@
 sudo apt update
 
-sudo apt install -y docker.io docker-compose # install docker and docker-compose
+sudo snap install docker # install docker and docker-compose
+sudo snap install docker-compose
 
 sudo su -
 
