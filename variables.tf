@@ -23,7 +23,7 @@ variable "availability_zone" {
 
 variable "aws_key" {
   type = string
-  default = "key_web" # <--- KEY NAME
+  default = "./web/key/key_web" # <--- KEY NAME
 }
   
 variable "ami" {
