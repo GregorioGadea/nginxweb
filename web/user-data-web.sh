@@ -28,3 +28,6 @@ EOF
 sudo chmod +x /home/ubuntu/compose_files/docker-compose.yml
 cd /home/ubuntu/compose_files
 sudo docker-compose up -d
+
+#sudo usermod -aG docker $USER
+#sudo newgrp docker
