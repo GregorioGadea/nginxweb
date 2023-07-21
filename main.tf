@@ -1,11 +1,11 @@
 resource "aws_instance" "web" {
   provider      = aws
-  ami           = data.aws_ami.amazon-linux-2.id
+  ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
   user_data     = file("./web/user-data-web.sh")
   key_name      = var.aws_key
-  monitoring    = true
-  availability_zone = "us-east-1a"
+  #monitoring    = true # <-- Optional
+  availability_zone = var.availability_zone
 
   root_block_device {
     delete_on_termination = true
@@ -14,7 +14,7 @@ resource "aws_instance" "web" {
   }
 
   tags = {
-    Name = "SnipeIT"
+    Name = "web"
     env  = "infra"
     IaC  = "true"
   }
