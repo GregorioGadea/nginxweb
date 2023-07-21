@@ -19,7 +19,4 @@ variable "aws_key" {
   default = "key_web" # <--- KEY NAME OF YOUR KEY PAIR ON AWS 
 }
   
-variable "ami" {
-  type = string
-  default = "value" # <--- AMI ID
-}
+
